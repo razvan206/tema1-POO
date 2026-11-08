@@ -8,6 +8,8 @@ import fileio.InputLoader;
 import java.io.File;
 import java.io.IOException;
 
+import util.TimeConversionUtils;
+
 /**
  * The entry point to this homework. It runs the checker that tests your implementation.
  */
