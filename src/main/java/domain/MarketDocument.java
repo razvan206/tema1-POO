@@ -14,6 +14,7 @@ public class MarketDocument {
     private String priceMeasureUnit;
     private String quantityMeasureUnit;
     private String currencyUnit;
+    private String date;
     private Map<Integer, MarketPoint> points = new TreeMap<>();
     // we use TreeMap to have the intervals sorted out and to have O(1) acces time to elements
 
@@ -81,6 +82,18 @@ public class MarketDocument {
 
     public DataType getDataType() {
         return dataType;
+    }
+
+    public void setDataType(DataType dataType) {
+        this.dataType = dataType;
+    }
+
+    public String getDate(){
+        return date;
+    }
+
+    public void setDate(String date){
+        this.date = date;
     }
 
     public Map<Integer, MarketPoint> getPointsMap() {

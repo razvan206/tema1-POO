@@ -27,6 +27,10 @@ public class GridLoadPoint extends MarketPoint {
         return null;
     }
 
+    public Double getQuantity() {
+        return quantity;
+    }
+
     @Override
     public void fillJsonPoint(ObjectNode node) {
         node.put("interval", this.interval);
